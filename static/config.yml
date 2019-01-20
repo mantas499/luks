@@ -1,4 +1,0 @@
-backend:
-  name: git-gateway
-  branch: master https://github.com/mantas499/luks.git
-  media_folder: "images/uploads"
