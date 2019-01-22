@@ -47,12 +47,14 @@ class Carousel extends React.Component {
             )
           })}
         </Slider>
-        <Button className={classes.pagination} onClick={this.onClickBack.bind(this)}>
-          <Back className={classes.icon} />
-        </Button>
-        <Button style={{left: '10.5%'}} className={classes.pagination} onClick={this.onClickNext.bind(this)}>
-          <Next className={classes.icon} />
-        </Button>
+        <div className={classes.pagination}>
+          <Button className={classes.button} onClick={this.onClickBack.bind(this)}>
+            <Back className={classes.icon} />
+          </Button>
+          <Button className={classes.button} onClick={this.onClickNext.bind(this)}>
+            <Next className={classes.icon} />
+          </Button>
+        </div>
       </div>
     );
   }
