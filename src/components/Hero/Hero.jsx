@@ -25,9 +25,6 @@ class Hero extends React.Component {
         <Fade in={true} timeout={1650}>
           <Carousel items={items}></Carousel>
         </Fade>
-        <div className={classes.content}>
-          TEST
-        </div>
       </div>
     );
   }

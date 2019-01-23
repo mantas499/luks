@@ -3,6 +3,8 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Hero from '../components/Hero/Hero';
 import Navigation from '../components/Navigation/Navigation';
+import AboutUs from '../components/AboutUs/AboutUs';
+import FeaturedLinks from '../components/FeaturedLinks/FeaturedLinks';
 
 const IndexPage = () => (
   <React.Fragment>
@@ -12,6 +14,8 @@ const IndexPage = () => (
       <Navigation/>
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]}/>
+        <AboutUs />
+        <FeaturedLinks/>
       </Layout>
       <footer>
         © {new Date().getFullYear()}, Built with

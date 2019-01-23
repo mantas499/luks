@@ -25,6 +25,7 @@ const Layout = ({ children }) => (
             width: '100%',
             paddingTop: 0,
             padding: 0,
+            paddingBottom: '2%',
             overflow: 'hidden'
           }}
         >

@@ -25,7 +25,7 @@ class Navigation extends React.Component {
     return (
       <React.Fragment>
         <div className={classes.menuToggle} onClick={this.onMenuOpen.bind(this)}>
-          {this.state.visible ? <Exit style={{ fontSize: 45 }}/> : <Open style={{ fontSize: 45 }}/>}
+          {this.state.visible ? <Exit style={{ fontSize: '4vw' }}/> : <Open style={{ fontSize: '4vw' }}/>}
         </div>
         <Drawer anchor="left" open={this.state.visible} onClose={this.onMenuOpen.bind(this)}>
           <div className={classes.sidebar}>

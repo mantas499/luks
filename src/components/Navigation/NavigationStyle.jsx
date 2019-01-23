@@ -10,18 +10,16 @@ const navigationStyle = theme => ({
   },
   sidebar: {
     height: '100%',
-    width: '100%',
+    width: '200px',
     backgroundColor: '#111727',
-    color: 'white'
+    color: 'white',
+    opacity: '0.9'
   },
   logo: {
     cursor: 'pointer',
     padding: '7%',
-    maxHeight: '150px',
-    width: 'auto',
-    [theme.breakpoints.down('sm')]: {
-      maxHeight: '65px'
-    },
+    height: 'auto',
+    width: '100%'
   },
   links: {
     listStyleType: 'none',
