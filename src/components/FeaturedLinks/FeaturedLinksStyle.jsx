@@ -16,8 +16,7 @@ const featuredLinksStyle = theme => ({
     margin: '0',
     height: '100%',
     width: '100%',
-    position: 'absolute',
-    objectFit: 'cover'
+    position: 'absolute'
   },
   imageRow: {
     [theme.breakpoints.down(680)]: {
