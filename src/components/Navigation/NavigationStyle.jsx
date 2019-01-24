@@ -3,8 +3,8 @@ const navigationStyle = theme => ({
     paddingRight: '16px',
     position: 'fixed',
     zIndex: 100,
-    top: '5%',
-    right: '1.5%',
+    top: '2.25%',
+    right: '0%',
     cursor: 'pointer',
     color: 'white'
   },
@@ -47,9 +47,9 @@ const navigationStyle = theme => ({
     backgroundColor: 'rgb(25, 32, 50)',
     width: '200px',
     position: 'fixed',
-    top: -95,
-    right: -95,
-    borderRadius: '100px'
+    top: -115,
+    right: -115,
+    borderRadius: '175px'
   }
 
 });
