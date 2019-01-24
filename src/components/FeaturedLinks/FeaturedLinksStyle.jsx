@@ -3,11 +3,11 @@ const featuredLinksStyle = theme => ({
     background: '#111727',
     paddingLeft: '10%',
     paddingRight: '10%',
-    height: '370px',
+    height: '450px',
     [theme.breakpoints.down(680)]: {
       height: 'auto',
-      paddingLeft: '2.5%',
-      paddingRight: '2.5%'
+      paddingLeft: '0',
+      paddingRight: '0'
     }
   },
   image: {
@@ -38,7 +38,7 @@ const featuredLinksStyle = theme => ({
   },
   row: {
     display: 'inline-block',
-    height: '370px',
+    height: '450px',
     width: '50%',
     position: 'relative',
     padding: 0,

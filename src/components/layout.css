@@ -2,16 +2,12 @@ html {
     font-family: 'Baloo Thambi', cursive;
     -ms-text-size-adjust: 100%;
     width: auto!important;
-    overflow-x: hidden!important;
     -webkit-text-size-adjust: 100%;
-    width: 100%;
 }
 
 body {
     margin: 0;
     width: auto!important;
-    overflow-x: hidden!important;
-    width: 100%;
     padding: 0;
 }
 

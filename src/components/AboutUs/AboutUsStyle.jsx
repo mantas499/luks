@@ -1,9 +1,12 @@
 const aboutUsStyle = theme => ({
   root: {
     width: '85%',
+    height: '450px',
     margin: '0 auto',
-    padding: '2%',
-    paddingTop: 0,
+    padding: '2.5%',
+    [theme.breakpoints.down(800)]: {
+      height: 'auto'
+    }
   },
   column: {
     position: 'relative',
@@ -41,6 +44,7 @@ const aboutUsStyle = theme => ({
       left: '10%',
       margin: '0 auto',
       height: '50%',
+      maxHeight: '350px',
       width: '100%',
       padding: '7%',
       paddingTop: '0'
