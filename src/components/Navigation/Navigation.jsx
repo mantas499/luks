@@ -10,8 +10,23 @@ class Navigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      visible: false
+      visible: false,
+      scroll: 0
     };
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleSroll.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleSroll);
+  }
+
+  handleSroll() {
+    this.setState({
+      scroll: window.scrollY
+    });
   }
 
   onMenuOpen() {
@@ -22,10 +37,14 @@ class Navigation extends React.Component {
 
   render() {
     const { classes } = this.props;
+
     return (
       <React.Fragment>
-        <div className={classes.menuToggle} onClick={this.onMenuOpen.bind(this)}>
-          {this.state.visible ? <Exit style={{ fontSize: '2em' }}/> : <Open style={{ fontSize: '2em' }}/>}
+        <div className={classes.toolbar}
+             style={{ backgroundColor: this.state.scroll > 600 ? '#111727' : 'transparent' }}>
+          <div className={classes.menuToggle} onClick={this.onMenuOpen.bind(this)}>
+            {this.state.visible ? <Exit style={{ fontSize: '2em' }}/> : <Open style={{ fontSize: '2em' }}/>}
+          </div>
         </div>
         <Drawer anchor="left" open={this.state.visible} onClose={this.onMenuOpen.bind(this)}>
           <div className={classes.sidebar}>

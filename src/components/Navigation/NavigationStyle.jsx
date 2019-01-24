@@ -4,7 +4,7 @@ const navigationStyle = theme => ({
     position: 'fixed',
     zIndex: 100,
     top: '5%',
-    right: '3.5%',
+    right: '1.5%',
     cursor: 'pointer',
     color: 'white'
   },
@@ -21,7 +21,7 @@ const navigationStyle = theme => ({
     }
   },
   sidebar: {
-    height: '100%',
+    height: '200%',
     width: '200px',
     backgroundColor: '#111727',
     color: 'white',
@@ -40,7 +40,18 @@ const navigationStyle = theme => ({
     listStyleType: 'none',
     fontSize: '1.65em',
     lineHeight: '100%'
+  },
+  toolbar: {
+    zIndex: '1000',
+    height: '200px',
+    backgroundColor: 'rgb(25, 32, 50)',
+    width: '200px',
+    position: 'fixed',
+    top: -95,
+    right: -95,
+    borderRadius: '100px'
   }
+
 });
 
 export default navigationStyle;
