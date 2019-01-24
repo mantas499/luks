@@ -2,7 +2,6 @@ import React from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
 import Image from '../../images/hero.png';
 import FeaturedLinksStyle from './FeaturedLinksStyle';
-import classNames from 'classnames';
 import LocalShipping from '@material-ui/icons/LocalShipping';
 import MyLocation from '@material-ui/icons/MyLocation';
 import Money from '@material-ui/icons/Money';
