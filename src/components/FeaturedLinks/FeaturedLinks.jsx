@@ -12,7 +12,7 @@ class FeaturedLinks extends React.Component {
     const { classes } = this.props;
     return (
       <div className={classes.root}>
-        <div className={classNames(classes.row, classes.imageRow)}>
+        <div className={classes.row}>
           <img src={Image} className={classes.image}/>
         </div>
         <div className={classes.row}>
