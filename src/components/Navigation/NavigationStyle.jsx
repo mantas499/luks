@@ -6,10 +6,7 @@ const navigationStyle = theme => ({
     top: '5%',
     right: '3.5%',
     cursor: 'pointer',
-    color: 'white',
-    [theme.breakpoints.down(680)]: {
-      display: 'none'
-    }
+    color: 'white'
   },
   menuToggleInner: {
     paddingRight: '16px',
