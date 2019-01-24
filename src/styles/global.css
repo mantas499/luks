@@ -1,5 +1,6 @@
 html body {
     padding: 0 !important;
     width: auto!important;
-    overflow-x: hidden!important
+    overflow-x: hidden!important;
+    width: 100%;
 }

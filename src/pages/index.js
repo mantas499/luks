@@ -9,7 +9,7 @@ import FeaturedLinks from '../components/FeaturedLinks/FeaturedLinks';
 const IndexPage = () => (
   <React.Fragment>
     <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi" rel="stylesheet"/>
-    <div style={{ fontFamily: "Baloo Thambi, cursive", overflowY: 'hidden' }}>
+    <div style={{ fontFamily: "Baloo Thambi, cursive", overflowX: 'hidden' }}>
       <Hero/>
       <Navigation/>
       <Layout>
