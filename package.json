@@ -7,6 +7,8 @@
   "dependencies": {
     "@material-ui/core": "^3.9.0",
     "@material-ui/icons": "^3.0.2",
+    "classNames": "latest",
+    "classnames": "^2.2.6",
     "gatsby": "^2.0.76",
     "gatsby-cli": "^2.4.8",
     "gatsby-image": "^2.0.20",
