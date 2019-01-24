@@ -6,13 +6,14 @@ import LocalShipping from '@material-ui/icons/LocalShipping';
 import MyLocation from '@material-ui/icons/MyLocation';
 import Money from '@material-ui/icons/Money';
 import Blog from '@material-ui/icons/CollectionsBookmark';
+import classNames from 'classnames';
 
 class FeaturedLinks extends React.Component {
   render() {
     const { classes } = this.props;
     return (
       <div className={classes.root}>
-        <div className={classes.row}>
+        <div className={classNames(classes.row, classes.imageRow)}>
           <img src={Image} className={classes.image}/>
         </div>
         <div className={classes.row}>

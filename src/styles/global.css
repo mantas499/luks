@@ -1,3 +1,5 @@
 body {
     padding: 0 !important;
+    overflow-y: hidden;
+    width: 100%;
 }
