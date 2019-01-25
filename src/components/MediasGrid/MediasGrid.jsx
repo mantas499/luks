@@ -3,11 +3,8 @@ import MediasGridStyle from './MediasGridStyle';
 import withStyles from '@material-ui/core/styles/withStyles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
-import IconButton from '@material-ui/core/IconButton';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
 import Image1 from '../../images/hero.png';
 import Image2 from '../../images/blog-link1.jpg';
-import Image3 from '../../images/blog-link2.jpg';
 
 const tileData = [{
   img: Image1,
