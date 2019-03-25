@@ -38,27 +38,27 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       }
     `).then(result => {
       console.log(result);
-      createPaginatedPages({
-        edges: result.data.allMarkdownRemark.edges,
-        createPage: createPage,
-        pageTemplate: './src/templates/index.js',
-        pageLength: 5,
-        pathPrefix: '',
-      })
-      const posts = result.data.allMarkdownRemark.edges;
-
-      result.data.allMarkdownRemark.edges.forEach(({ node },index) => {
-        createPage({
-          path: node.fields.slug,
-          component: path.resolve(`./src/templates/blog-post.js`),
-          context: {
-            // Data passed to context is available in page queries as GraphQL variables.
-            slug: node.fields.slug,
-            prev: index === 0 ? null : posts[index - 1].node,
-            next: index === posts.length - 1 ? null : posts[index + 1].node,
-          },
-        })
-      })
+      // createPaginatedPages({
+      //   edges: result.data.allMarkdownRemark.edges,
+      //   createPage: createPage,
+      //   pageTemplate: './src/templates/index.js',
+      //   pageLength: 5,
+      //   pathPrefix: '',
+      // })
+      // const posts = result.data.allMarkdownRemark.edges;
+      //
+      // result.data.allMarkdownRemark.edges.forEach(({ node },index) => {
+      //   createPage({
+      //     path: node.fields.slug,
+      //     component: path.resolve(`./src/templates/blog-post.js`),
+      //     context: {
+      //       // Data passed to context is available in page queries as GraphQL variables.
+      //       slug: node.fields.slug,
+      //       prev: index === 0 ? null : posts[index - 1].node,
+      //       next: index === posts.length - 1 ? null : posts[index + 1].node,
+      //     },
+      //   })
+      // })
       resolve()
     })
   })
