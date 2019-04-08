@@ -55,8 +55,8 @@ class MediasGrid extends React.Component {
         </div>
         <div className={classes.root}>
           <GridList cellHeight={200} spacing={16} cols={3} className={classes.gridList}>
-            {tileData.map(tile => (
-              <GridListTile key={tile.img} cols={tile.cols} rows={tile.rows}>
+            {tileData.map((tile, index) => (
+              <GridListTile key={index} cols={tile.cols} rows={tile.rows}>
                 <img className={classes.image} src={tile.img} alt={tile.title} />
               </GridListTile>
             ))}

@@ -3,10 +3,8 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Hero from '../components/Hero/Hero';
 import Navigation from '../components/Navigation/Navigation';
-import AboutUs from '../components/AboutUs/AboutUs';
-import FeaturedLinks from '../components/FeaturedLinks/FeaturedLinks';
-import MediasGrid from '../components/MediasGrid/MediasGrid';
 import Footer from '../components/Footer/Footer';
+import ProductGrid from '../components/ProductGrid/ProductGrid';
 
 const IndexPage = () => (
   <React.Fragment>
@@ -15,16 +13,10 @@ const IndexPage = () => (
       <Navigation/>
       <Hero/>
       <Layout>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]}/>
-        <br/>
-        <AboutUs />
-        <br/>
-        <FeaturedLinks/>
-        <br/>
-        <MediasGrid/>
-        <br/>
+        <SEO title="Kontaktai Luks" keywords={[`sukrės`, `žvejyba`, `žvejybos prekės`, `sukrė`, `sukre`]}/>
+        <ProductGrid/>
       </Layout>
-      <Footer></Footer>
+      <Footer/>
     </div>
   </React.Fragment>
 );

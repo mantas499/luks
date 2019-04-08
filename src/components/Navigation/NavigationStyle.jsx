@@ -50,8 +50,39 @@ const navigationStyle = theme => ({
     top: -115,
     right: -115,
     borderRadius: '175px'
+  },
+  title: {
+    lineHeight: '100px',
+    padding: 0,
+    margin: 0,
+    fontSize: '2.5rem',
+    color: 'white',
+    fontWeight: '600',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1.55rem'
+    }
+  },
+  navbar: {
+    height: '100px',
+    backgroundColor: '#111727',
+    background: '#111727'
+  },
+  nav: {
+    position: 'absolute',
+    width: '100%',
+    textAlign: 'center',
+    '& a': {
+      verticalAlign: 'super',
+      lineHeight: '100px',
+      color: 'white',
+      textDecoration: 'none',
+      fontSize: '1.05rem',
+      padding: '2.5%',
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '0.95rem'
+      }
+    }
   }
-
 });
 
 export default navigationStyle;

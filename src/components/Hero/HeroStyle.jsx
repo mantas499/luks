@@ -2,12 +2,11 @@ const heroStyle = theme => ({
   root: {
     width: '100%',
     maxHeight: 900,
-    padding: 0
-  },
-  content: {
-
+    padding: 0,
+    marginTop: '100px'
   },
   logo: {
+    marginTop: '100px',
     cursor: 'pointer',
     position: 'absolute',
     top: 10,

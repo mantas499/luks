@@ -21,7 +21,6 @@ class AboutUs extends React.Component {
         </div>
         <div className={classes.column}>
           <img className={classes.largePlaceHolder} src={Image}/>
-          <img className={classes.smallPlaceHolder} src={Image}/>
         </div>
       </div>
     );

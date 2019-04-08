@@ -35,8 +35,8 @@ const aboutUsStyle = theme => ({
     top: '20%',
     left: '15%',
     position: 'absolute',
-    height: '225px',
-    width: '375px',
+    height: '250px',
+    width: '400px',
     objectFit: 'cover',
     [theme.breakpoints.down(1200)]: {
       position: 'relative',

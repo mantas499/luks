@@ -3,10 +3,9 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Hero from '../components/Hero/Hero';
 import Navigation from '../components/Navigation/Navigation';
-import AboutUs from '../components/AboutUs/AboutUs';
-import FeaturedLinks from '../components/FeaturedLinks/FeaturedLinks';
-import MediasGrid from '../components/MediasGrid/MediasGrid';
 import Footer from '../components/Footer/Footer';
+import Lithuania from '../components/Map/Lithuania';
+import Typography from '@material-ui/core/Typography/Typography';
 
 const IndexPage = () => (
   <React.Fragment>
@@ -15,16 +14,16 @@ const IndexPage = () => (
       <Navigation/>
       <Hero/>
       <Layout>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]}/>
+        <SEO title="Produktai Luks" keywords={[`sukrės`, `žvejyba`, `žvejybos prekės`, `sukrė`, `sukre`]}/>
         <br/>
-        <AboutUs />
+        <Typography align={'center'} variant={'h4'}>Mūsų produktus galite rasti parduotuvėse:</Typography>
         <br/>
-        <FeaturedLinks/>
-        <br/>
-        <MediasGrid/>
+        <div style={{margin: '0 auto', width: 'fit-content'}}>
+          <Lithuania />
+        </div>
         <br/>
       </Layout>
-      <Footer></Footer>
+      <Footer/>
     </div>
   </React.Fragment>
 );
